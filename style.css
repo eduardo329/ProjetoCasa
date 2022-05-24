@@ -1,0 +1,165 @@
+:root{
+    --cor-primaria: rgb(185, 164, 164);
+    --cor-secundaria: rgb(240, 235, 235);
+}
+
+
+body{
+    background-color: rgb(236, 234, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* envelopamento da casa */
+#casa-geral{
+    margin-top:6rem;
+    width: 95%;
+    height: 38rem;
+    background-color: transparent;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/*  colunas  */
+
+.colunas{
+    position: absolute;
+    width: 7rem;
+    background-color: transparent;
+    height:40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    left: 4rem;
+    
+}
+
+.coluna{
+    height: 100%;
+    width: 2.8rem;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#coluna-1{
+    margin-right: 6px;
+}
+
+/* linhas das colunas */
+
+.box-lines{
+    background-color: transparent;
+    width: 100%;
+    height: 3rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-lines > .line{
+    width: 100%;
+    height: 3px;
+    background-color: var(--cor-primaria);
+}
+
+/* corpo da casa */
+
+.casa{
+    width: 100%;
+    height: 95%;
+    background-color: var(--cor-primaria);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+/* topo da casa  */
+
+.header-casa{
+    width: 100%;
+    height: 5.5rem;
+    background-color: var(--cor-secundaria);
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: c;
+}
+
+.header-casa > .line-header{
+    width: 100%;
+    height: 5px;
+    background-color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+/* linhas internas da casa */
+
+.wrapper-lines-interna{
+    width: 100%;
+    height: 2.3rem;
+    background-color: transparent;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-around;
+}
+
+.wrapper-lines-interna > .line{
+    width: 100%;
+    height: 3px;
+    background-color: var(--cor-secundaria);
+}
+
+/* Janela e porta */
+
+.wrapper-janela-porta{
+    width: 76%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+}
+
+.janela{
+    width: 22rem;
+    height: 12rem;
+background: rgba(115, 203, 209, 0.26);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.2px);
+-webkit-backdrop-filter: blur(7.2px);
+}
+
+.porta{
+background: rgba(115, 203, 209, 0.26);
+border-radius: 10px 10px 0px 0px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.2px);
+-webkit-backdrop-filter: blur(7.2px);
+    width: 18rem;
+    height: 24rem;
+    margin-bottom: -3.6rem;
+    z-index: 2;
+}
+
+.footer{
+    width: 100%;
+    height: 2rem;
+    background-color: var(--cor-secundaria);
+    z-index: 1;
+    position: relative;
+}
